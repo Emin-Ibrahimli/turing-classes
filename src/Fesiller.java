@@ -21,7 +21,6 @@ public class Fesiller {
                         (month > 5 && month < 9) ? "Yay fəsili" :
                                 (month > 8 && month < 12) ? "Payız fəsili" : "Yanlış fəsil";
 
-System.out.println(month);
 System.out.println(result);
 
 
@@ -31,22 +30,6 @@ System.out.println(result);
 
 
 
-  //      if (month == 12 || month == 1 || month == 2) {
-
-//            System.out.println("Qış fəsili");
-  //      }
-    //    else if (month > 2 && month < 6) {
-
-//        System.out.println("Yaz fəsilidir");
-  //      }
-    //    else if (month > 5 && month < 8) {
-
-      //      System.out.println("Yay fəsili");
-        //}
-       // else if (month > 8 && month < 12) {
-
-       //     System.out.println("Payız fəsili");
-        //}
 
 
 
