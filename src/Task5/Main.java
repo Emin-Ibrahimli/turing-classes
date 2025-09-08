@@ -14,20 +14,17 @@ public class Main {
         };
 
         int n = students.length;
-        for (int i = 0; i < n - 1; i++) {
-            boolean bln = false;
-            for (int j = 0; j < n - i - 1; j++) {
-                if (students[j].getName().compareToIgnoreCase(students[j + 1].getName()) > 0){
-                    Student s1 = students[j];
-                    students[j] = students[j + 1];
-                    students[j + 1] = s1;
-                    bln = true;
+        for (int i = 0; i < n; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < n; j++) {
+                if (students[j].getName().compareToIgnoreCase(students[minIndex].getName()) < 0){
+                    minIndex = j;
                 }
             }
 
-                if (!bln) {
-                    break;
-                }
+            Student temp = students[i];
+            students[i] = students[minIndex];
+            students[minIndex] = temp;
         }
 
          for(Student s: students) {
